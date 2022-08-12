@@ -1,3 +1,6 @@
-Repositório de exercícios do Curso de Node-RED do CFB Cursos.
+Repositório de exercícios Node-RED.
 
-IDE utilizada: Visual Studio Code.
+Conteúdo:
+
+Exercícios do curso de Node-RED do Curso de Node-RED do Prof. Bruno do canal CFB Cursos;
+IDEs utilizadas: IntelliJ e Eclipse.
