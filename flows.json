@@ -72,6 +72,14 @@
         "env": []
     },
     {
+        "id": "0f601e1b332165a2",
+        "type": "tab",
+        "label": "Exercício 9",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "69b3ee8fff56a114",
         "type": "mqtt-broker",
         "name": "",
@@ -916,6 +924,168 @@
         "wires": [
             [
                 "f3b5f4f2bc9ae1f0"
+            ]
+        ]
+    },
+    {
+        "id": "8481120ee8bfda11",
+        "type": "http in",
+        "z": "0f601e1b332165a2",
+        "name": "http in",
+        "url": "/exercicio9",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "7d03c12e8b70f9f7"
+            ]
+        ]
+    },
+    {
+        "id": "7e9cb5bd1be82412",
+        "type": "http response",
+        "z": "0f601e1b332165a2",
+        "name": "http request",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d6e71f304e0aa914",
+        "type": "template",
+        "z": "0f601e1b332165a2",
+        "name": "formatacaoSaida",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Número randômico gerado: {{payload}}.",
+        "output": "str",
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "7e9cb5bd1be82412"
+            ]
+        ]
+    },
+    {
+        "id": "06d94d8fbeeeb308",
+        "type": "inject",
+        "z": "0f601e1b332165a2",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "4eb9fa1bcc78c8b4"
+            ]
+        ]
+    },
+    {
+        "id": "0b2baba73a4d01f4",
+        "type": "debug",
+        "z": "0f601e1b332165a2",
+        "name": "Saída",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4eb9fa1bcc78c8b4",
+        "type": "function",
+        "z": "0f601e1b332165a2",
+        "name": "geradoraNumeroRandomico0A10",
+        "func": "msg.payload = (Math.random()*10).toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "51cdacc5562f2893"
+            ]
+        ]
+    },
+    {
+        "id": "51cdacc5562f2893",
+        "type": "change",
+        "z": "0f601e1b332165a2",
+        "name": "Armazenar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 480,
+        "wires": [
+            [
+                "0b2baba73a4d01f4"
+            ]
+        ]
+    },
+    {
+        "id": "7d03c12e8b70f9f7",
+        "type": "change",
+        "z": "0f601e1b332165a2",
+        "name": "Recuperar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "d6e71f304e0aa914"
             ]
         ]
     }
