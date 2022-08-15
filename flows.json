@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "b8272760ee52dab3",
+        "type": "tab",
+        "label": "Exercício 10",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "4d4e0e5c0d7dfbc2",
         "type": "tab",
         "label": "Exercício 7",
@@ -75,6 +83,38 @@
         "id": "0f601e1b332165a2",
         "type": "tab",
         "label": "Exercício 9",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "de20183a7163d237",
+        "type": "tab",
+        "label": "Exercício 11",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e6fabb3817f9ba8",
+        "type": "tab",
+        "label": "Exercício 12",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "26b670098001254b",
+        "type": "tab",
+        "label": "Exercício 13",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cd4acec1c06d41ee",
+        "type": "tab",
+        "label": "Exercício 14",
         "disabled": false,
         "info": "",
         "env": []
@@ -812,6 +852,56 @@
         ]
     },
     {
+        "id": "f1ee177cc7222f43",
+        "type": "http in",
+        "z": "b8272760ee52dab3",
+        "name": "http in",
+        "url": "/exercicio10",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "bea52f4add579f78"
+            ]
+        ]
+    },
+    {
+        "id": "aa6d7e0487d1e601",
+        "type": "http response",
+        "z": "b8272760ee52dab3",
+        "name": "http request",
+        "statusCode": "",
+        "headers": {
+            "content-type": "image/png"
+        },
+        "x": 890,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bea52f4add579f78",
+        "type": "file in",
+        "z": "b8272760ee52dab3",
+        "name": "retornoArquivo",
+        "filename": "G:/CIM4.0/Projeto/projetos-valmir/node-red/Logo.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "aa6d7e0487d1e601"
+            ]
+        ]
+    },
+    {
         "id": "c9cac4f9d3d26be1",
         "type": "http in",
         "z": "4d4e0e5c0d7dfbc2",
@@ -1088,5 +1178,246 @@
                 "d6e71f304e0aa914"
             ]
         ]
+    },
+    {
+        "id": "9b71b9ce9135194b",
+        "type": "http in",
+        "z": "de20183a7163d237",
+        "name": "http in",
+        "url": "/exercicio11",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 550,
+        "y": 400,
+        "wires": [
+            [
+                "b46b19423aa26f54"
+            ]
+        ]
+    },
+    {
+        "id": "63957e3745ac3d84",
+        "type": "http response",
+        "z": "de20183a7163d237",
+        "name": "http request",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/rar"
+        },
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b46b19423aa26f54",
+        "type": "file in",
+        "z": "de20183a7163d237",
+        "name": "retornoArquivo",
+        "filename": "G:/CIM4.0/Projeto/projetos-valmir/node-red/Logo (compactado).rar",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "63957e3745ac3d84"
+            ]
+        ]
+    },
+    {
+        "id": "27c0e6df79a448c8",
+        "type": "http in",
+        "z": "4e6fabb3817f9ba8",
+        "name": "http in",
+        "url": "/exercicio12",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 550,
+        "y": 400,
+        "wires": [
+            [
+                "6d060cf88d1b713b"
+            ]
+        ]
+    },
+    {
+        "id": "6d060cf88d1b713b",
+        "type": "template",
+        "z": "4e6fabb3817f9ba8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>CRIAÇÃO DE UM FORMULÁRIO TESTE</title>\n</head>\n<body>\n    <h1>Olá {{payload.nome}}</h1>     \n</body>\n</html>",
+        "output": "str",
+        "x": 720,
+        "y": 400,
+        "wires": [
+            [
+                "e99f42348e05d31e"
+            ]
+        ]
+    },
+    {
+        "id": "e99f42348e05d31e",
+        "type": "http response",
+        "z": "4e6fabb3817f9ba8",
+        "name": "http request",
+        "statusCode": "",
+        "headers": {},
+        "x": 910,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a891e62360ac93e1",
+        "type": "inject",
+        "z": "26b670098001254b",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 490,
+        "y": 400,
+        "wires": [
+            [
+                "3390f4441ee3dacd"
+            ]
+        ]
+    },
+    {
+        "id": "3390f4441ee3dacd",
+        "type": "http request",
+        "z": "26b670098001254b",
+        "name": "http request",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://nodered.org/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 400,
+        "wires": [
+            [
+                "30735f53e36173e9"
+            ]
+        ]
+    },
+    {
+        "id": "917b49dbd8c657a8",
+        "type": "debug",
+        "z": "26b670098001254b",
+        "name": "Saída",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "30735f53e36173e9",
+        "type": "html",
+        "z": "26b670098001254b",
+        "name": "tag",
+        "property": "",
+        "outproperty": "",
+        "tag": "h2",
+        "ret": "text",
+        "as": "single",
+        "x": 850,
+        "y": 400,
+        "wires": [
+            [
+                "917b49dbd8c657a8"
+            ]
+        ]
+    },
+    {
+        "id": "cef4bb0589631aa3",
+        "type": "split",
+        "z": "cd4acec1c06d41ee",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "ea2619b509edf1dd"
+            ]
+        ]
+    },
+    {
+        "id": "5e26bba3a8341c94",
+        "type": "inject",
+        "z": "cd4acec1c06d41ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1234567",
+        "payloadType": "num",
+        "x": 320,
+        "y": 400,
+        "wires": [
+            [
+                "cef4bb0589631aa3"
+            ]
+        ]
+    },
+    {
+        "id": "ea2619b509edf1dd",
+        "type": "debug",
+        "z": "cd4acec1c06d41ee",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 400,
+        "wires": []
     }
 ]
