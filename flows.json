@@ -56,14 +56,6 @@
         "env": []
     },
     {
-        "id": "b8272760ee52dab3",
-        "type": "tab",
-        "label": "Exercício 10",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "4d4e0e5c0d7dfbc2",
         "type": "tab",
         "label": "Exercício 7",
@@ -83,6 +75,14 @@
         "id": "0f601e1b332165a2",
         "type": "tab",
         "label": "Exercício 9",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b8272760ee52dab3",
+        "type": "tab",
+        "label": "Exercício 10",
         "disabled": false,
         "info": "",
         "env": []
@@ -112,7 +112,7 @@
         "env": []
     },
     {
-        "id": "cd4acec1c06d41ee",
+        "id": "00a0cdb45091547d",
         "type": "tab",
         "label": "Exercício 14",
         "disabled": false,
@@ -145,6 +145,167 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "696ad7dfed717455",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3e7c6dadf3305853",
+        "type": "ui_tab",
+        "name": "DASHBOARD",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a4e403865e5e5e47",
+        "type": "ui_group",
+        "name": "MÁQUINAS",
+        "tab": "3e7c6dadf3305853",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c4d1bca6b5078f5f",
+        "type": "ui_group",
+        "name": "SERVIÇOS",
+        "tab": "3e7c6dadf3305853",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "502706d043de121a",
+        "type": "ui_tab",
+        "name": "GRÁFICOS",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "488092914d9bc9d5",
+        "type": "ui_group",
+        "name": "PRODUÇÃO",
+        "tab": "502706d043de121a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a678657322a9c1e7",
+        "type": "ui_group",
+        "name": "PRODUTIVIDADE",
+        "tab": "502706d043de121a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "0e4165de2d512118",
@@ -852,56 +1013,6 @@
         ]
     },
     {
-        "id": "f1ee177cc7222f43",
-        "type": "http in",
-        "z": "b8272760ee52dab3",
-        "name": "http in",
-        "url": "/exercicio10",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 490,
-        "y": 440,
-        "wires": [
-            [
-                "bea52f4add579f78"
-            ]
-        ]
-    },
-    {
-        "id": "aa6d7e0487d1e601",
-        "type": "http response",
-        "z": "b8272760ee52dab3",
-        "name": "http request",
-        "statusCode": "",
-        "headers": {
-            "content-type": "image/png"
-        },
-        "x": 890,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "bea52f4add579f78",
-        "type": "file in",
-        "z": "b8272760ee52dab3",
-        "name": "retornoArquivo",
-        "filename": "G:/CIM4.0/Projeto/projetos-valmir/node-red/Logo.png",
-        "filenameType": "str",
-        "format": "",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 680,
-        "y": 440,
-        "wires": [
-            [
-                "aa6d7e0487d1e601"
-            ]
-        ]
-    },
-    {
         "id": "c9cac4f9d3d26be1",
         "type": "http in",
         "z": "4d4e0e5c0d7dfbc2",
@@ -1180,6 +1291,56 @@
         ]
     },
     {
+        "id": "f1ee177cc7222f43",
+        "type": "http in",
+        "z": "b8272760ee52dab3",
+        "name": "http in",
+        "url": "/exercicio10",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "bea52f4add579f78"
+            ]
+        ]
+    },
+    {
+        "id": "aa6d7e0487d1e601",
+        "type": "http response",
+        "z": "b8272760ee52dab3",
+        "name": "http request",
+        "statusCode": "",
+        "headers": {
+            "content-type": "image/png"
+        },
+        "x": 890,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bea52f4add579f78",
+        "type": "file in",
+        "z": "b8272760ee52dab3",
+        "name": "retornoArquivo",
+        "filename": "G:/CIM4.0/Projeto/projetos-valmir/node-red/Logo.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "aa6d7e0487d1e601"
+            ]
+        ]
+    },
+    {
         "id": "9b71b9ce9135194b",
         "type": "http in",
         "z": "de20183a7163d237",
@@ -1360,64 +1521,748 @@
         ]
     },
     {
-        "id": "cef4bb0589631aa3",
-        "type": "split",
-        "z": "cd4acec1c06d41ee",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 570,
-        "y": 400,
+        "id": "1cd59a641555a8af",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Laser",
+        "group": "a4e403865e5e5e47",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Laser",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LASER",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 100,
         "wires": [
             [
-                "ea2619b509edf1dd"
+                "53efae997a9f5de5"
             ]
         ]
     },
     {
-        "id": "5e26bba3a8341c94",
+        "id": "8b09e150c15c1014",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Prensa",
+        "group": "a4e403865e5e5e47",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Prensa",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "PRENSA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "1712e79472d5a446",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Punsionadeira",
+        "group": "a4e403865e5e5e47",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Punsionadeira",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "PUNSIONADEIRA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 180,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "6e9ff2e174cbe292",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Serra",
+        "group": "a4e403865e5e5e47",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Serra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "SERRA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "011ea245f740e289",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Calandra",
+        "group": "a4e403865e5e5e47",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Calandra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "CALANDRA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 20,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "703039194764b681",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Dobradeira",
+        "group": "a4e403865e5e5e47",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Dobradeira",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "DOBRADEIRA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 60,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "53efae997a9f5de5",
+        "type": "ui_text",
+        "z": "00a0cdb45091547d",
+        "group": "a4e403865e5e5e47",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "MÁQ. ESCOLHIDA:",
+        "label": "MÁQ. ESCOLHIDA:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 960,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "daf047fcb6dce695",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Dobra",
+        "group": "c4d1bca6b5078f5f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Dobra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "DOBRA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "8a7ede1a54d90ea3",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Corte",
+        "group": "c4d1bca6b5078f5f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Corte",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "CORTE",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "afc101498fa4a548",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Usinagem",
+        "group": "c4d1bca6b5078f5f",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Usinagem",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "USINAGEM",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "9411190f69c9289e",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Pintura",
+        "group": "c4d1bca6b5078f5f",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pintura",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "PINTURA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 480,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "7c120262d982f0e5",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Furação",
+        "group": "c4d1bca6b5078f5f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Furação",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "FURAÇÃO",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "e074fa7581ceb322",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "Montagem",
+        "group": "c4d1bca6b5078f5f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Montagem",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "MONTAGEM",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "c8d8ba6962d9212b",
+        "type": "ui_text",
+        "z": "00a0cdb45091547d",
+        "group": "c4d1bca6b5078f5f",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "SERVIÇO ESCOLHIDO:",
+        "label": "SERVIÇO ESCOLHIDO:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 970,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "169dbec272089f48",
+        "type": "ui_text_input",
+        "z": "00a0cdb45091547d",
+        "name": "TROCAR MÁQUINA? DIGITE A NOVA:",
+        "label": "TROCAR MÁQUINA? DIGITE A NOVA:",
+        "tooltip": "",
+        "group": "a4e403865e5e5e47",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "53efae997a9f5de5"
+            ]
+        ]
+    },
+    {
+        "id": "abaf71dbc68e19bd",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "CLIQUE PARA TROCAR",
+        "group": "a4e403865e5e5e47",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CLIQUE PARA TROCAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "payload",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "169dbec272089f48"
+            ]
+        ]
+    },
+    {
+        "id": "99c304aed4eccce8",
+        "type": "ui_button",
+        "z": "00a0cdb45091547d",
+        "name": "CLIQUE PARA TROCAR",
+        "group": "c4d1bca6b5078f5f",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CLIQUE PARA TROCAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "payload",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "7abd20362aec0e4b"
+            ]
+        ]
+    },
+    {
+        "id": "7abd20362aec0e4b",
+        "type": "ui_text_input",
+        "z": "00a0cdb45091547d",
+        "name": "TROCAR SERVIÇO? DIGITE O NOVO:",
+        "label": "TROCAR SERVIÇO? DIGITE O NOVO:",
+        "tooltip": "",
+        "group": "c4d1bca6b5078f5f",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 620,
+        "y": 560,
+        "wires": [
+            [
+                "c8d8ba6962d9212b"
+            ]
+        ]
+    },
+    {
+        "id": "be511570a8649605",
         "type": "inject",
-        "z": "cd4acec1c06d41ee",
-        "name": "",
+        "z": "00a0cdb45091547d",
+        "name": "Entrada",
         "props": [
             {
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "0.5",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "1234567",
-        "payloadType": "num",
-        "x": 320,
-        "y": 400,
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 620,
         "wires": [
             [
-                "cef4bb0589631aa3"
+                "1b27c32ca418ca98"
             ]
         ]
     },
     {
-        "id": "ea2619b509edf1dd",
-        "type": "debug",
-        "z": "cd4acec1c06d41ee",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
+        "id": "1b27c32ca418ca98",
+        "type": "random",
+        "z": "00a0cdb45091547d",
+        "name": "geradoraNumeroAleatorio0A200",
+        "low": 1,
+        "high": "200",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "043608f5ba191450"
+            ]
+        ]
+    },
+    {
+        "id": "043608f5ba191450",
+        "type": "ui_gauge",
+        "z": "00a0cdb45091547d",
+        "name": "ACELERAÇÃO",
+        "group": "488092914d9bc9d5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ACELERAÇÃO",
+        "label": "km/h",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
         "x": 780,
-        "y": 400,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bdc7f889f37d2af5",
+        "type": "inject",
+        "z": "00a0cdb45091547d",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "b083ce3c7ff6e5c1"
+            ]
+        ]
+    },
+    {
+        "id": "6d7ac625d141146b",
+        "type": "ui_gauge",
+        "z": "00a0cdb45091547d",
+        "name": "PEÇAS EM CONFORMIDADE",
+        "group": "a678657322a9c1e7",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "donut",
+        "title": "PEÇAS EM CONFORMIDADE",
+        "label": "Peças",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "33",
+        "seg2": "66",
+        "className": "",
+        "x": 970,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "4c7871727a9a47b1",
+        "type": "ui_gauge",
+        "z": "00a0cdb45091547d",
+        "name": "PEÇAS NÃO CONFORME",
+        "group": "a678657322a9c1e7",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "PEÇAS NÃO CONFORME",
+        "label": "Peças",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "33",
+        "seg2": "66",
+        "className": "",
+        "x": 960,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "b083ce3c7ff6e5c1",
+        "type": "random",
+        "z": "00a0cdb45091547d",
+        "name": "geradoraNumeroAleatorio0A100",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 720,
+        "wires": [
+            [
+                "f9e9a617a1691cd5"
+            ]
+        ]
+    },
+    {
+        "id": "f9e9a617a1691cd5",
+        "type": "switch",
+        "z": "00a0cdb45091547d",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "50",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 720,
+        "wires": [
+            [
+                "6d7ac625d141146b"
+            ],
+            [
+                "4c7871727a9a47b1"
+            ]
+        ]
+    },
+    {
+        "id": "e6f5dcf950a97487",
+        "type": "inject",
+        "z": "00a0cdb45091547d",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 820,
+        "wires": [
+            [
+                "25cb875fd52c83df"
+            ]
+        ]
+    },
+    {
+        "id": "25cb875fd52c83df",
+        "type": "random",
+        "z": "00a0cdb45091547d",
+        "name": "geradoraNumeroAleatorio0A100",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 510,
+        "y": 820,
+        "wires": [
+            [
+                "071c72eecad4dea6"
+            ]
+        ]
+    },
+    {
+        "id": "071c72eecad4dea6",
+        "type": "ui_gauge",
+        "z": "00a0cdb45091547d",
+        "name": "NÍVEL",
+        "group": "488092914d9bc9d5",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "wave",
+        "title": "NÍVEL",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 750,
+        "y": 820,
         "wires": []
     }
 ]
