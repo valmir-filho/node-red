@@ -1,13 +1,5 @@
 [
     {
-        "id": "001ee64275eb9825",
-        "type": "tab",
-        "label": "Martiaço",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "a88b8d189355e71c",
         "type": "tab",
         "label": "Exercício 1",
@@ -115,6 +107,14 @@
         "id": "00a0cdb45091547d",
         "type": "tab",
         "label": "Exercício 14",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "752c595be95a2a12",
+        "type": "tab",
+        "label": "Teste_SIM",
         "disabled": false,
         "info": "",
         "env": []
@@ -308,83 +308,15 @@
         "className": ""
     },
     {
-        "id": "0e4165de2d512118",
-        "type": "mqtt in",
-        "z": "001ee64275eb9825",
-        "name": "MQTT",
-        "topic": "stat/teste_sim/POWER1",
-        "qos": "1",
-        "datatype": "auto-detect",
-        "broker": "69b3ee8fff56a114",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 430,
-        "y": 400,
-        "wires": [
-            [
-                "1e086b612d2813b0"
-            ]
-        ]
-    },
-    {
-        "id": "b6bb7dcd8dc07f21",
-        "type": "aedes broker",
-        "z": "001ee64275eb9825",
-        "name": "Broker",
-        "mqtt_port": 1883,
-        "mqtt_ws_bind": "port",
-        "mqtt_ws_port": "8080",
-        "mqtt_ws_path": "",
-        "cert": "",
-        "key": "",
-        "certname": "",
-        "keyname": "",
-        "dburl": "",
-        "usetls": false,
-        "x": 590,
-        "y": 400,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "aa2ddd794a4332bf",
-        "type": "debug",
-        "z": "001ee64275eb9825",
-        "name": "Saída",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "1e086b612d2813b0",
-        "type": "function",
-        "z": "001ee64275eb9825",
-        "name": "contador",
-        "func": "var count = (context.get(\"count\") > 9 ? 0 : context.get(\"count\")) || 0;\nif (msg.payload == \"ON\") {\n    count += 1;\n    context.set(\"count\", count);\n    msg.payload = count;\n} else {\n    msg.payload = \"OFF\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 760,
-        "y": 400,
-        "wires": [
-            [
-                "aa2ddd794a4332bf"
-            ]
-        ]
+        "id": "44570ab5fe4b2dfe",
+        "type": "ui_group",
+        "name": "MEDIDORES",
+        "tab": "502706d043de121a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "c126ac5e4f6e6d61",
@@ -2263,6 +2195,157 @@
         "className": "",
         "x": 750,
         "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7096d0a266863ca7",
+        "type": "mqtt in",
+        "z": "752c595be95a2a12",
+        "name": "MQTT",
+        "topic": "stat/teste_sim/POWER1",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "69b3ee8fff56a114",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "f9ba5e7e6f9d5f11"
+            ]
+        ]
+    },
+    {
+        "id": "9db91754add88378",
+        "type": "aedes broker",
+        "z": "752c595be95a2a12",
+        "name": "Broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "8080",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1e590dee0282bf14",
+        "type": "mqtt out",
+        "z": "752c595be95a2a12",
+        "name": "acionamentoSaida2",
+        "topic": "cmnd/teste_sim/POWER2",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "69b3ee8fff56a114",
+        "x": 1100,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f9ba5e7e6f9d5f11",
+        "type": "function",
+        "z": "752c595be95a2a12",
+        "name": "function",
+        "func": "msg.count = context.get(\"count\") || 0;\nmsg.count += 1;\ncontext.set('count', msg.count);\nif (msg.count === 10) {\n    msg.topic = 'cmnd/teste_sim/POWER2';\n    msg.payload = 'ON';\n    context.set(\"count\", 0);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 440,
+        "wires": [
+            [
+                "9a11a181fc11a01b",
+                "f8e0c4c73583ec6d",
+                "8bb74d28b2ad4216"
+            ]
+        ]
+    },
+    {
+        "id": "f8e0c4c73583ec6d",
+        "type": "switch",
+        "z": "752c595be95a2a12",
+        "name": "switchsaida1ForSaida2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cmnd/teste_sim/POWER2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 540,
+        "wires": [
+            [
+                "1e590dee0282bf14"
+            ]
+        ]
+    },
+    {
+        "id": "9a11a181fc11a01b",
+        "type": "debug",
+        "z": "752c595be95a2a12",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "count",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8bb74d28b2ad4216",
+        "type": "ui_gauge",
+        "z": "752c595be95a2a12",
+        "name": "",
+        "group": "44570ab5fe4b2dfe",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MEDIDOR DE PULSOS",
+        "label": "pulsos",
+        "format": "{{count}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "3",
+        "seg2": "6",
+        "className": "",
+        "x": 830,
+        "y": 340,
         "wires": []
     }
 ]
