@@ -1,7 +1,7 @@
-Repositório de exercícios Node-RED.
+# Repositório de exercícios Node-RED.
 
-Conteúdo:
+## Conteúdo:
 
-Exercícios do Curso de Node-RED do Prof. Bruno do canal CFB Cursos.
+- Exercícios do Curso de Node-RED do Prof. Bruno do canal CFB Cursos.
 
-IDE utilizada: Node-RED.
+### IDE utilizada: Node-RED.
